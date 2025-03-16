@@ -24,7 +24,7 @@ JOBS = [
         'id': 4,
         'title': 'Backend Engineer',
         'location': 'Abia, Nigeria',
-        'salary': 'Naira. 120,00,000'
+        'salary': 'Naira. 150,00,000'
     }
 ]
 @app.route("/")
