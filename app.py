@@ -2,6 +2,8 @@ from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
 
+app.secret_key = "080CHIchi@@"
+
 JOBS = [
     {
         'id': 1,
@@ -28,7 +30,7 @@ JOBS = [
     }
 ]
 @app.route("/")
-def hello_gold():
+def home():
     return render_template("home.html",
                            jobs=JOBS,
                            company_name="Gold")
